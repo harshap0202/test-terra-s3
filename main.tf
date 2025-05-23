@@ -1,8 +1,8 @@
 resource "aws_s3_bucket" "example" {
-  bucket = "my-tf-test-bucket-12310-harsh"
+  bucket = var.bucket_name
 
   tags = {
-    Name        = "My bucket"
+    Name        = var.bucket_name
     Environment = "Dev"
   }
 }

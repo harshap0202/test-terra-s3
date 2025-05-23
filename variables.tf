@@ -1,8 +1,5 @@
-# main
-variable "profile" { type = string }
-
-# common
-variable "region" { 
-    type = string 
-    default = "ap-south-1"
+variable "bucket_name" {
+  type        = string
+  description = "Bucket Name"
+  default     = "harshap1231123123122"
 }
